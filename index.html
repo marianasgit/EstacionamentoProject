@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="js/darkMode.js"></script>
     <script src="js/getJson.js"></script>
     <title>Estacionamento</title>
@@ -56,6 +57,25 @@
             </table>
             </section>
         <button id="btnAddVeiculo">Adicionar Novo Veículo</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Registro</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form" id="modal-form">
+                    <div class="modal-field-container">
+                        <input type="text" class="modal-field" placeholder="Nome do Cliente" id="nome" required>
+                        <input type="email" class="modal-field" placeholder="Veículo" id="veiculo" required pattern=".+@.+\..+">
+                        <input type="text" class="modal-field" placeholder="Placa" id="placa" required> 
+                    </div>
+                </form>
+                <div class="buttons">
+                    <button class="button-imprimir">Imprimir</button>
+                    <button class="button-salvar">Salvar</button>
+                </div>
+        </div>
     </main>
     <footer>
         <div id="btnDarkMode">
