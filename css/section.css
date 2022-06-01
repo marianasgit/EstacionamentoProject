@@ -2,7 +2,6 @@ section{
     background-color: ghostwhite;
     width: 80vw;
     height: 60vh;
-    
     overflow-y: auto;
 }
 th, td {

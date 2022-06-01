@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
 }
 #logo{
     padding-left: 20px;
