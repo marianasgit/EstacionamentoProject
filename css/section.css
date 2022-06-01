@@ -1,8 +1,8 @@
 section{
-    background-color: gainsboro;
+    background-color: ghostwhite;
     width: 80vw;
     height: 60vh;
-    border: solid 2px black;
+    
     overflow-y: auto;
 }
 th, td {
@@ -17,9 +17,9 @@ table{
 .tblTitulo{
     width:0vw;
     height: 10vh;
-    background-color:#4f4e4e;
+    background-color:#8b8b8b;
     color: black;
-    border: solid 2px;
+    border: solid 0.1px;
     font: 2em sans-serif white;
 }
 .TblConteudo{
@@ -31,11 +31,12 @@ table{
 }
 /* From uiverse.io by @alexroumi */
 #deletar {
-    padding: 15px 25px;
+    cursor: pointer;
+    width: 80%;
+    height: 80%;
     border: unset;
     color: #ffffff;
     z-index: 1;
-    border: solid 1px black;
     background: #af3d3d;
     position: relative;
     font-weight: 1000;
@@ -53,7 +54,6 @@ table{
     left: 0;
     height: 100%;
     width: 0;
-    border:solid 2px black;
     background-color: #212121;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
@@ -66,6 +66,44 @@ table{
    }
    
    #deletar:hover::before {
+    width: 100%;
+   }
+   #editar {
+    cursor: pointer;
+    width: 80%;
+    height: 80%;
+    border: unset;
+    color: #ffffff;
+    z-index: 1;
+    background: #026b25;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   #editar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 2px 4px 8px -6px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   #editar:hover {
+    color: #ffffff;
+   }
+   
+   #editar:hover::before {
     width: 100%;
    }
    

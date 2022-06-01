@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="/Main.js/darkMode.js"></script>
     <title>Estacionamento</title>
 </head>
 <body>
@@ -44,6 +46,7 @@
                     <td class="TblConteudo">21/02/2022</td>
                     <td class="TblConteudo">22:50</td>
                     <td class="TblConteudo">
+                        <button id="editar">Editar</button>
                     </td>
                     <td class="TblConteudo">
                         <button id="deletar">Deletar</button>
@@ -51,9 +54,15 @@
                 </tr>
             </table>
             </section>
-        <button>Adicionar Novo Veículo</button>
-
+        <button id="btnAddVeiculo">Adicionar Novo Veículo</button>
     </main>
-    
+    <footer>
+        <div id="btnDarkMode">
+            <label class="switch">
+                <input onclick="ActDarkMode() "type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </footer>
 </body>
 </html>

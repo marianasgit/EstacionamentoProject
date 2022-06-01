@@ -8,7 +8,8 @@
     font-family: 'Alumni Sans', sans-serif;
 }
 
-:root{
-    
-}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
