@@ -26,3 +26,6 @@ fetch("../js/dados.json")
     placeholder.innerHTML = out;
 }
 )
+
+
+document.getElementById('print').addEventListener('click', ()=>print())

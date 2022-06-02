@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
-    <script src="js/darkMode.js"></script>
-    <script src="js/getJson.js"></script>
+    <script src="js/darkMode.js" defer></script>
+    <script src="js/getJson.js" defer></script>
     <title>Estacionamento</title>
 </head>
 <body>
@@ -58,8 +58,8 @@
             </section>
         <button id="btnAddVeiculo">Adicionar Novo Veículo</button>
 
-        <div class="modal" id="modal">
-            <div class="modal-content">
+        <div class="modal registro" id="modal">
+            <div class="modal-content" id="modal-content">
                 <header class="modal-header">
                     <h2>Novo Registro</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
@@ -72,9 +72,24 @@
                     </div>
                 </form>
                 <div class="buttons">
-                    <button class="button-imprimir">Imprimir</button>
+                    <button class="button-imprimir print" id="print">Imprimir</button>
                     <button class="button-salvar">Salvar</button>
                 </div>
+            </div>    
+        </div>
+        <div class="fechamento">
+            <div class="modal-fechamento">
+                <h2>Fechamento</h2>
+                <div class="dados-fechamento">
+                    <span id="cliente">Cliente:</span>
+                    <span id="veiculo">Veículo:</span>
+                    <span id="placa">Placa:</span>
+                    <span id="entrada">Entrada:</span>
+                    <span id="saida">Saída:</span>
+                        <span id="valor-total">Valor Total: <br> R$</span>
+                </div>
+                <button id="button-finalizar">Finalizar</button>
+            </div>
         </div>
     </main>
     <footer>
