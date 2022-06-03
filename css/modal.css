@@ -171,5 +171,8 @@ span {
 }
 
 @media print {
-    
+    header
+    main{
+        display: none;
+    }
 }
